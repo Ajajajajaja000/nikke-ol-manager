@@ -1,11 +1,9 @@
----
-name: ? 機能追加・提案
-about: 新しい機能や改善アイデアの提案
+name: 機能追加・提案
+description: 新しい機能や改善アイデアの提案
 title: "[機能提案] "
 labels: ["feature"]
 assignees: ""
----
-
+body:
 ## 概要
 （何を実現したいか）
 
