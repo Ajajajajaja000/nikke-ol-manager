@@ -1,0 +1,49 @@
+name: バグ報告
+description: 不具合・動作ミスの報告
+title: "[バグ] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### 不具合の内容
+        どんなバグか簡潔に書いてください。
+  - type: textarea
+    id: bug_summary
+    attributes:
+      label: バグの概要
+      placeholder: 例）装備が表示されない
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 発生手順
+      placeholder: |
+        1. キャラを選択
+        2. 装備を開く
+        3. エラー発生
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: 期待される挙動
+      placeholder: 本来どうなるべきか
+
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: 再現頻度
+      options:
+        - 毎回
+        - 時々
+        - 一度だけ
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: 備考
+      placeholder: スクショや補足があれば

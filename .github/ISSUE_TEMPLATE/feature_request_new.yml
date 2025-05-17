@@ -1,0 +1,32 @@
+name: 機能提案
+description: 新しい機能や改善アイデアの提案
+title: "[機能提案] "
+labels: ["feature"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### 提案内容
+        どんな機能を追加したいか書いてください。
+  - type: textarea
+    id: idea_summary
+    attributes:
+      label: 提案の概要
+      placeholder: 例）OCRで装備自動登録できるようにしたい
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: 優先度
+      options:
+        - 高
+        - 中
+        - 低
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: 備考
+      placeholder: 参考URLや補足など
